@@ -42,9 +42,14 @@ var APP_ID = 'amzn1.echo-sdk-ams.app.2d40fb52-74fd-41b7-b310-620488b38ebe'; //re
 
 var https = require('https');
 
+var API_URL = "http://api.worldweatheronline.com/free/v2/ski.ashx/"
 /**
  * The AlexaSkill Module that has the AlexaSkill prototype and helper functions
  */
+var city
+var state
+API_URL = API_URL + "q=" + city + state
+
 var AlexaSkill = require('./AlexaSkill');
 
 /**
