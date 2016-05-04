@@ -38,7 +38,7 @@
 /**
  * App ID for the skill
  */
-var APP_ID = undefined; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
+var APP_ID = 'amzn1.echo-sdk-ams.app.2d40fb52-74fd-41b7-b310-620488b38ebe'; //replace with 'amzn1.echo-sdk-ams.app.[your-unique-value-here]';
 
 var https = require('https');
 
@@ -316,4 +316,3 @@ exports.handler = function (event, context) {
     var skill = new HistoryBuffSkill();
     skill.execute(event, context);
 };
-
